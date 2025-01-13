@@ -1,14 +1,17 @@
 import React from 'react';
+import room from './images/room.jpg';
 import './App.css';
 import PhotoSphereViewer from './viewer';
 
-const baseUrl = 'https://photo-sphere-viewer-data.netlify.app/assets/';
+const baseUrl = '/';
 
 function App() {
   return (
     <div className="App">
       <h1>View trọ tôi</h1>
-      <PhotoSphereViewer imageUrl={baseUrl + 'sphere.jpg'} />
+      <PhotoSphereViewer imageUrl={room} />
+      {/* <img src={room} alt="room" /> */}
+
     </div>
   );
 }
